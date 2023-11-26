@@ -1,0 +1,146 @@
+.container {
+  border: 2px solid darkblue;
+}
+
+.logo {
+  height: 60px;
+  width: 65%;
+}
+
+.second-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: rgb(19, 136, 179);
+  margin-top: 10px;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: auto;
+  border: 1px solid darkblue;
+}
+
+.discription {
+  border: 2px dotted rgb(80, 80, 94);
+  margin-top: 10px;
+  padding: 5px;
+  color: rgb(80, 80, 94);
+  font-size: 12px;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: space-between;
+}
+
+.media-title {
+  color: rgb(31, 31, 85);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-title {
+  margin-left: 10px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  border: 1px solid blue;
+  border-radius: 5%;
+  height: 30px;
+  width: 300px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.age-selector {
+  height: 40px;
+}
+
+.message {
+  height: 50px;
+}
+
+.choose-songs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid darkblue;
+  margin: 2px 0;
+  width: 100%;
+}
+
+.price {
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+}
+
+.singer {
+  margin-left: 10px;
+  padding: 0;
+}
+
+.medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+.menue {
+  border: 1px solid darkblue;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.menue-option,
+.selected-songs {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: end;
+  color: #0a0a56;
+
+}
+
+.total-price {
+  background-color: rgb(196, 221, 243);
+}
+
+.selected-songs {
+  background-color: black;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(196, 221, 243);
+  color: #00FF00;
+}
+
+a {
+  text-decoration: none;
+}

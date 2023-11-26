@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="webbshopstyle.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <img class="logo img-fluid mt-2" src="logo.png" alt="">
+    <h1 class="title">Beställningsformulär</h1>
+
+    <h6>
+      Din uppgift är att använda Bootstrap (som du kompletterar med en egenskriven CSS-fil för övriga CSS-regler som
+      behövs) så att du får en layout som motsvarar layouten i figur 2 nedan, samt en design som i viss mån motsvarar
+      exemplet (ni får dock fritt välja andra färger och typsnitt än i exemplet). Du ska även komplettera din
+      HMTL-fil så att den förutom själva beställningsformuläret även innehåller övrigt innehåll enligt figur 2.
+      Stilar (färg, typsnitt, ramar o.s.v.) är enkla att hantera men positionering med CSS kräver lite mer tid och
+      tester för att få rätt.
+    </h6>
+
+    <div class="second-container">
+      <div class="">
+        <div class="form">
+          <div class="row-1">
+            <div class="text-form">
+              <p class="form-title">Förnamn*:</p>
+              <p class="form-title">Efternamn*:</p>
+              <p class="form-title">Address*:</p>
+              <p class="form-title">E-post*:</p>
+              <p class="form-title">Ålder*:</p>
+              <p class="form-title">Meddelande*:</p>
+            </div>
+            <div class="form-input">
+              <input type="text" class="form-control" id="firstName">
+              <input type="text" class="form-control" id="lastName">
+              <input type="text" class="form-control" id="address">
+              <input type="email" class="form-control" id="email">
+              <select name="ålder" id="ålder-id" class="form-select age-selector">
+                <option value="under-age">Under 18 år</option>
+                <option value="adult-age">18 år-50 år</option>
+                <option value="old-age">Över 50 år</option>
+              </select>
+              <textarea class="form-control message"></textarea>
+            </div>
+          </div>
+
+          <h4 class="media-title">Välj Låtar och media:</h4>
+
+          <div class="row-2">
+            <div class="js-songs">
+
+            </div>
+            <div class="medias">
+              <p>Välj media:</p>
+              <div class="form-check">
+                <input type="radio" checked="checked" class="form-check-input" name="media-option">
+                <label class="form-check-label"> Spotify</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="media-option">
+                <label class="form-check-label"> YouTube</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="media-option">
+                <label class="form-check-label"> Apple Music</label>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-sm float-end mb-2 js-submit-order">Skicka beställningen</button>
+          </div>
+        </div>
+        <div class="discription">
+          Den här webbsida är @Best Music Ever Inc 2023
+        </div>
+      </div>
+
+      <div class="left-form">
+        <div class="menue">
+          <a href="webbshop.html" class="menue-option">Hem</a>
+          <a href="webbshop.html" class="menue-option">Start</a>
+          <a href="webbshop.html" class="menue-option">Katalog</a>
+        </div>
+        <div class="menue">
+          <p class="menue-option">Du har valt följande låtar:</p>
+          <div class="js-selected-songs"></div>
+        </div>
+        <div class="menue">
+          <p class="menue-option total-price js-price">Pris: 0 SEK</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="songInfo.js"></script>
+  <script src="validation.js"></script>
+  <script src="webbshop.js"></script>
+
+</body>
+
+</html>

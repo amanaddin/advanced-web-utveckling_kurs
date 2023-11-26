@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 255, 255, 0.5);
+      height: 100px;
+      justify-content: center;
+    }
+
+    .flex-item1 {
+      background-color: rgba(255, 0, 0, 0.5);
+      flex: 1;
+      text-align: center;
+    }
+
+    .flex-item2 {
+      background-color: blue;
+      text-align: center;
+    }
+
+    .T {
+      height: 100px;
+      background-color: aquamarine;
+      vertical-align: baseline;
+      text-align: center;
+      margin: auto;
+    }
+
+    a:visited {
+      color: red;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      transform: translate(10px, 0px);
+    }
+
+    .h {
+      background-color: rgb(156, 45, 45);
+    }
+  </style>
+</head>
+
+<body>
+  <form action="index.html" method="GET">
+    <input type="text" required>
+    <input type="email" required>
+    <input type="number" min="0" max="100">
+    <input type="hidden" name="hidden_field" value="dold data" />
+    <button type="submit">Submit</button>
+
+    <fieldset>
+      <legend>Personuppgifter</legend>
+      <input type="text" name="first_name" placeholder="Förnamn" />
+      <input type="text" name="last_name" placeholder="Efternamn" />
+    </fieldset>
+
+  </form>
+
+  <div class="flex-container">
+    <div class="flex-item1">
+      name
+    </div>
+    <div class="flex-item2">
+      Aman
+    </div>
+    <div style:”order:2;flex:0 0 240px”>Hej</div>
+  </div>
+  <button id="btn">Button</button>
+
+  <div class="T">TEXT</div>
+  <a href="www.google.com">google</a>
+
+  <div class="h">
+    <button class="btn">Button</button>
+  </div>
+</body>
+
+<script>
+
+  document.getElementById("btn").addEventListener('click', () => alert("hallo"))
+  var person = {
+    namn: "John",
+    ålder: 30,
+    sägHej: function () {
+      console.log("Hej, mitt namn är " + this.namn);
+    }
+  };
+
+  console.log(person.namn);
+  console.log(person['ålder']);
+  person.sägHej();
+
+  for (const egenskap in person) {
+    console.log(egenskap)
+  }
+
+  var text = "Detta är en exempeltext med några ord. exempel";
+  var mönster = /exempel/g;
+  var resultat = text.match(mönster);
+  console.log(resultat);
+
+
+
+</script>
+
+</html>
